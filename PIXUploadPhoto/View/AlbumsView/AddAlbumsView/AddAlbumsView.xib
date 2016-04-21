@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddAlbumsView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-Xb-XrT" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="10" y="10" width="580" height="580"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="相簿名稱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yzy-uq-zXs" customClass="UIFloatLabelTextField">
+                            <rect key="frame" x="20" y="70" width="540" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="NIA-dq-YoW"/>
+                            </constraints>
+                            <color key="textColor" red="0.027450980390000001" green="0.44705882349999998" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="相簿描述" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBx-fU-alr" customClass="UIFloatLabelTextField">
+                            <rect key="frame" x="20" y="125" width="540" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="JSj-fR-uPW"/>
+                            </constraints>
+                            <color key="textColor" red="0.027450980390000001" green="0.44705882349999998" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-jk-YgG">
+                            <rect key="frame" x="25" y="185" width="530" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Kwc-u2-ITP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="請選擇全站分類">
+                                <color key="titleColor" red="0.027450980390000001" green="0.44705882349999998" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zky-b2-xA0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhq-XK-QrI">
+                            <rect key="frame" x="25" y="235" width="530" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="n3Z-yM-iKa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="請選擇瀏覽權限">
+                                <color key="titleColor" red="0.027450980390000001" green="0.44705882349999998" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectCompetence:" destination="iN0-l3-epB" eventType="touchUpInside" id="xwy-vV-UvQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="新增相簿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dq-4g-2a0">
+                            <rect key="frame" x="20" y="30" width="260" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="pgz-eA-xGh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.17756187919999999" blue="0.2127111183" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Yzy-uq-zXs" firstAttribute="top" secondItem="hpa-Xb-XrT" secondAttribute="top" constant="70" id="1z3-b4-11A"/>
+                        <constraint firstItem="bhq-XK-QrI" firstAttribute="leading" secondItem="hpa-Xb-XrT" secondAttribute="leading" constant="25" id="8zC-C3-bYt"/>
+                        <constraint firstItem="zBx-fU-alr" firstAttribute="centerX" secondItem="hpa-Xb-XrT" secondAttribute="centerX" id="BBv-Be-BEV"/>
+                        <constraint firstItem="5dq-4g-2a0" firstAttribute="centerX" secondItem="hpa-Xb-XrT" secondAttribute="centerX" id="EXR-ug-qlq"/>
+                        <constraint firstItem="bhq-XK-QrI" firstAttribute="top" secondItem="Hi6-jk-YgG" secondAttribute="bottom" constant="10" id="Fi8-Zq-J01"/>
+                        <constraint firstItem="Hi6-jk-YgG" firstAttribute="centerX" secondItem="hpa-Xb-XrT" secondAttribute="centerX" id="Fii-NM-GyR"/>
+                        <constraint firstItem="bhq-XK-QrI" firstAttribute="centerX" secondItem="hpa-Xb-XrT" secondAttribute="centerX" id="LIb-qZ-enn"/>
+                        <constraint firstItem="Yzy-uq-zXs" firstAttribute="centerX" secondItem="hpa-Xb-XrT" secondAttribute="centerX" id="ON1-IM-Txd"/>
+                        <constraint firstItem="5dq-4g-2a0" firstAttribute="top" secondItem="hpa-Xb-XrT" secondAttribute="top" constant="30" id="ZYS-dd-ZxC"/>
+                        <constraint firstItem="zBx-fU-alr" firstAttribute="leading" secondItem="hpa-Xb-XrT" secondAttribute="leading" constant="20" id="bTC-Sk-r5T"/>
+                        <constraint firstItem="zBx-fU-alr" firstAttribute="top" secondItem="Yzy-uq-zXs" secondAttribute="bottom" constant="5" id="bzq-K6-VvO"/>
+                        <constraint firstItem="Hi6-jk-YgG" firstAttribute="leading" secondItem="hpa-Xb-XrT" secondAttribute="leading" constant="25" id="noE-hU-nru"/>
+                        <constraint firstItem="Yzy-uq-zXs" firstAttribute="leading" secondItem="hpa-Xb-XrT" secondAttribute="leading" constant="20" id="pIM-bg-6YG"/>
+                        <constraint firstItem="Hi6-jk-YgG" firstAttribute="top" secondItem="zBx-fU-alr" secondAttribute="bottom" constant="10" id="ujX-CS-u4H"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hpa-Xb-XrT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7LN-T8-6pO"/>
+                <constraint firstAttribute="trailing" secondItem="hpa-Xb-XrT" secondAttribute="trailing" constant="10" id="RVL-vq-Tbe"/>
+                <constraint firstAttribute="bottom" secondItem="hpa-Xb-XrT" secondAttribute="bottom" constant="10" id="VV1-zq-Vcc"/>
+                <constraint firstItem="hpa-Xb-XrT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="hYD-zn-DU2"/>
+            </constraints>
+            <connections>
+                <outlet property="albumsDescriptionTextField" destination="zBx-fU-alr" id="QeJ-FS-4tU"/>
+                <outlet property="albumsNameTextField" destination="Yzy-uq-zXs" id="a8h-1x-c96"/>
+                <outlet property="albumsScrollView" destination="hpa-Xb-XrT" id="Cg5-Hb-gZ6"/>
+                <outlet property="categoryButton" destination="Hi6-jk-YgG" id="c7J-zS-aLm"/>
+                <outlet property="competenceButton" destination="bhq-XK-QrI" id="95C-hq-56v"/>
+            </connections>
+            <point key="canvasLocation" x="350" y="414"/>
+        </view>
+    </objects>
+</document>

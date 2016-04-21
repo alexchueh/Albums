@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--history-->
+        <scene sceneID="fUr-ld-WaL">
+            <objects>
+                <tableViewController storyboardIdentifier="UploadHistoryViewController" title="history" id="bOp-Xv-c8s" customClass="UploadHistoryViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="EnU-i0-jeM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UploadHistoryTableViewCell" rowHeight="80" id="wbb-Nz-vhx" customClass="UploadHistoryTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wbb-Nz-vhx" id="02M-Ld-93J">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上傳至『』相簿" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-p3-2FC">
+                                            <rect key="frame" x="8" y="8" width="210" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="210" id="Kmd-je-Rf0"/>
+                                                <constraint firstAttribute="height" constant="21" id="rpi-V2-0dr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上傳時間：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghv-BW-dQg">
+                                            <rect key="frame" x="442" y="40" width="150" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="1gs-eV-j8h"/>
+                                                <constraint firstAttribute="height" constant="21" id="iFM-oi-VvH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狀態：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT9-rq-i7z">
+                                            <rect key="frame" x="502" y="11" width="90" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="HzM-Z3-W02"/>
+                                                <constraint firstAttribute="height" constant="21" id="xL2-ah-6DJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-9q-UAE" customClass="M13ProgressViewStripedBar">
+                                            <rect key="frame" x="8" y="46" width="354" height="10"/>
+                                            <color key="backgroundColor" red="1" green="0.17756187919999999" blue="0.2127111183" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ghv-BW-dQg" secondAttribute="trailing" id="CQ9-4l-CQP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zT9-rq-i7z" secondAttribute="trailing" id="JIo-Rh-iTQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1YR-9q-UAE" secondAttribute="bottom" constant="15" id="MTx-dG-yJp"/>
+                                        <constraint firstAttribute="topMargin" secondItem="XXX-p3-2FC" secondAttribute="top" id="frY-46-k5x"/>
+                                        <constraint firstItem="ghv-BW-dQg" firstAttribute="leading" secondItem="1YR-9q-UAE" secondAttribute="trailing" constant="80" id="jQd-F5-h1N"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="XXX-p3-2FC" secondAttribute="leading" id="tTJ-Iv-ClJ"/>
+                                        <constraint firstItem="zT9-rq-i7z" firstAttribute="top" secondItem="02M-Ld-93J" secondAttribute="topMargin" constant="3" id="uxk-F5-wZh"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="1YR-9q-UAE" secondAttribute="leading" id="wbe-VJ-nI0"/>
+                                        <constraint firstItem="1YR-9q-UAE" firstAttribute="top" secondItem="02M-Ld-93J" secondAttribute="topMargin" constant="38" id="yFV-pA-6yc"/>
+                                        <constraint firstItem="ghv-BW-dQg" firstAttribute="top" secondItem="02M-Ld-93J" secondAttribute="topMargin" constant="32" id="zgR-I1-Evo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumsPath" destination="XXX-p3-2FC" id="UWy-Mc-H7V"/>
+                                    <outlet property="status" destination="zT9-rq-i7z" id="2hq-G2-udp"/>
+                                    <outlet property="uploadDate" destination="ghv-BW-dQg" id="UPc-Lt-x3I"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bOp-Xv-c8s" id="lz4-sQ-B3d"/>
+                            <outlet property="delegate" destination="bOp-Xv-c8s" id="hKv-aa-e0G"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iV7-00-u9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="498"/>
+        </scene>
+    </scenes>
+</document>

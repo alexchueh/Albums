@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="BwF-pM-IaY">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="0jh-il-BdL" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kDv-FX-M1n"/>
+                        <viewControllerLayoutGuide type="bottom" id="fN7-10-5SB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GAm-5x-db9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Z2-it-kGl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-gm-rE8">
+                                <rect key="frame" x="221" y="557" width="159" height="29"/>
+                                <segments>
+                                    <segment title="痞客邦登入"/>
+                                    <segment title="其他登入"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectLoginType:" destination="0jh-il-BdL" eventType="valueChanged" id="lTZ-Lc-7Gm"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Z2-it-kGl" firstAttribute="leading" secondItem="GAm-5x-db9" secondAttribute="leading" id="Nig-nv-WGI"/>
+                            <constraint firstItem="RtN-gm-rE8" firstAttribute="top" secondItem="6Z2-it-kGl" secondAttribute="bottom" constant="17" id="Wo5-gq-teG"/>
+                            <constraint firstItem="fN7-10-5SB" firstAttribute="top" secondItem="RtN-gm-rE8" secondAttribute="bottom" constant="15" id="boT-Ad-dVv"/>
+                            <constraint firstItem="RtN-gm-rE8" firstAttribute="centerX" secondItem="GAm-5x-db9" secondAttribute="centerX" id="hAN-22-eWA"/>
+                            <constraint firstItem="6Z2-it-kGl" firstAttribute="top" secondItem="GAm-5x-db9" secondAttribute="top" id="lhh-8i-k3g"/>
+                            <constraint firstItem="fN7-10-5SB" firstAttribute="top" secondItem="6Z2-it-kGl" secondAttribute="bottom" constant="60" id="zVz-vV-MiL"/>
+                            <constraint firstAttribute="trailing" secondItem="6Z2-it-kGl" secondAttribute="trailing" id="zyu-15-9zH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6Z2-it-kGl" id="pDc-0K-qpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgo-H4-JrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="453"/>
+        </scene>
+    </scenes>
+</document>

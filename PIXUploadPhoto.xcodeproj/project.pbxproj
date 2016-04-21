@@ -1,0 +1,1368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504555B3A0CA485A2C4E4BB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D4464AA5B033DAFF2A1936 /* libPods.a */; };
+		BF5723A61C60469500D19F7F /* PhotosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5723A51C60469500D19F7F /* PhotosModel.m */; };
+		BF5723A91C60475100D19F7F /* FixAlbumsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5723A81C60475100D19F7F /* FixAlbumsView.m */; };
+		BF5723AB1C60476C00D19F7F /* FixAlbumsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5723AA1C60476C00D19F7F /* FixAlbumsView.xib */; };
+		BF5723EF1C63329700D19F7F /* UploadHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5723EE1C63329700D19F7F /* UploadHistoryViewController.m */; };
+		BF5723F11C63345800D19F7F /* UploadHistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5723F01C63345800D19F7F /* UploadHistoryViewController.storyboard */; };
+		BF5723F41C63395900D19F7F /* UploadHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5723F31C63395900D19F7F /* UploadHistoryTableViewCell.m */; };
+		BF943B5F1C33B4CA00D8AB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943B5E1C33B4CA00D8AB0D /* main.m */; };
+		BF943B621C33B4CA00D8AB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943B611C33B4CA00D8AB0D /* AppDelegate.m */; };
+		BF943B681C33B4CA00D8AB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF943B661C33B4CA00D8AB0D /* Main.storyboard */; };
+		BF943B6A1C33B4CA00D8AB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF943B691C33B4CA00D8AB0D /* Assets.xcassets */; };
+		BF943B6D1C33B4CA00D8AB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF943B6B1C33B4CA00D8AB0D /* LaunchScreen.storyboard */; };
+		BF943B781C33B4CA00D8AB0D /* PIXUploadPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943B771C33B4CA00D8AB0D /* PIXUploadPhotoTests.m */; };
+		BF943B831C33B4CA00D8AB0D /* PIXUploadPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943B821C33B4CA00D8AB0D /* PIXUploadPhotoUITests.m */; };
+		BF943BD71C3A0C9200D8AB0D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BD61C3A0C9200D8AB0D /* BaseViewController.m */; };
+		BF943BDA1C3A0CC400D8AB0D /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BD91C3A0CC400D8AB0D /* BaseTableViewController.m */; };
+		BF943BEA1C3A0E4100D8AB0D /* UIColor+PIXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BE01C3A0E4100D8AB0D /* UIColor+PIXCategory.m */; };
+		BF943BEB1C3A0E4100D8AB0D /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BE31C3A0E4100D8AB0D /* UIImageView+SDWebImage.m */; };
+		BF943BEC1C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BE61C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.m */; };
+		BF943BED1C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BE91C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.m */; };
+		BF943BF41C3A0E6200D8AB0D /* APIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BF01C3A0E6200D8AB0D /* APIObject.m */; };
+		BF943BF51C3A0E6200D8AB0D /* EncodeUTF8.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BF31C3A0E6200D8AB0D /* EncodeUTF8.m */; };
+		BF943BF91C3A101700D8AB0D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BF81C3A101700D8AB0D /* BaseModel.m */; };
+		BF943BFC1C3A102800D8AB0D /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BFB1C3A102800D8AB0D /* BaseView.m */; };
+		BF943C001C3A10EE00D8AB0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943BFF1C3A10EE00D8AB0D /* MainViewController.m */; };
+		BF943C041C3A160B00D8AB0D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943C031C3A160B00D8AB0D /* LoginViewController.m */; };
+		BF943C061C3A162C00D8AB0D /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF943C051C3A162C00D8AB0D /* LoginViewController.storyboard */; };
+		BF943C0A1C3A1F5700D8AB0D /* CheckHasLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943C091C3A1F5700D8AB0D /* CheckHasLogin.m */; };
+		BF943C141C3BBFFA00D8AB0D /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF943C131C3BBFFA00D8AB0D /* AlbumsViewController.m */; };
+		BF943C161C3BC03300D8AB0D /* AlbumsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF943C151C3BC03300D8AB0D /* AlbumsViewController.storyboard */; };
+		BFAE9DF01C3F62620038AB88 /* NSString+DeleteBlankText.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9DEF1C3F62620038AB88 /* NSString+DeleteBlankText.m */; };
+		BFAE9DF51C3F6B970038AB88 /* AddAlbumsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9DF31C3F6B970038AB88 /* AddAlbumsView.m */; };
+		BFAE9DF61C3F6B970038AB88 /* AddAlbumsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9DF41C3F6B970038AB88 /* AddAlbumsView.xib */; };
+		BFAE9E051C3F99D00038AB88 /* CategoryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9DFA1C3F99D00038AB88 /* CategoryTableView.m */; };
+		BFAE9E061C3F99D00038AB88 /* CompetenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9DFD1C3F99D00038AB88 /* CompetenceTableView.m */; };
+		BFAE9E071C3F99D00038AB88 /* CustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E001C3F99D00038AB88 /* CustomHeaderView.m */; };
+		BFAE9E081C3F99D00038AB88 /* PasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E031C3F99D00038AB88 /* PasswordTableViewCell.m */; };
+		BFAE9E091C3F99D00038AB88 /* PasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E041C3F99D00038AB88 /* PasswordTableViewCell.xib */; };
+		BFAE9E0C1C3F9A200038AB88 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E0B1C3F9A200038AB88 /* BaseTableView.m */; };
+		BFAE9E261C3FAA170038AB88 /* AlbumsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E211C3FAA170038AB88 /* AlbumsCollectionView.m */; };
+		BFAE9E271C3FAA170038AB88 /* AlbumsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E241C3FAA170038AB88 /* AlbumsCollectionViewCell.m */; };
+		BFAE9E281C3FAA170038AB88 /* AlbumsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E251C3FAA170038AB88 /* AlbumsCollectionViewCell.xib */; };
+		BFAE9E301C3FBDCB0038AB88 /* AlbumsCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E2F1C3FBDCB0038AB88 /* AlbumsCollectionView.xib */; };
+		BFAE9E341C4354E60038AB88 /* AlbumsCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E331C4354E60038AB88 /* AlbumsCollectionModel.m */; };
+		BFAE9E391C4490250038AB88 /* SelectUploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E381C4490250038AB88 /* SelectUploadImageViewController.m */; };
+		BFAE9E3B1C4490380038AB88 /* SelectUploadImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E3A1C4490380038AB88 /* SelectUploadImageViewController.storyboard */; };
+		BFAE9E3D1C4490530038AB88 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E3C1C4490530038AB88 /* ProfileViewController.storyboard */; };
+		BFAE9E401C4490620038AB88 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E3F1C4490620038AB88 /* ProfileViewController.m */; };
+		BFAE9E451C44A8680038AB88 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E421C44A8680038AB88 /* ZYQAssetPicker.Bundle */; };
+		BFAE9E461C44A8680038AB88 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E441C44A8680038AB88 /* ZYQAssetPickerController.m */; };
+		BFAE9E4A1C44D8E30038AB88 /* SelectUploadImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E491C44D8E30038AB88 /* SelectUploadImageModel.m */; };
+		BFAE9E4E1C44EF260038AB88 /* SelectUploadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E4D1C44EF260038AB88 /* SelectUploadImageView.m */; };
+		BFAE9E521C44EF740038AB88 /* SelectAlbumsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E511C44EF740038AB88 /* SelectAlbumsTableView.m */; };
+		BFAE9E561C44F02B0038AB88 /* SelectAlbumsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E551C44F02B0038AB88 /* SelectAlbumsModel.m */; };
+		BFAE9E5A1C45EC7B0038AB88 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E591C45EC7B0038AB88 /* PhotosViewController.m */; };
+		BFAE9E5C1C45EC880038AB88 /* PhotosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E5B1C45EC880038AB88 /* PhotosViewController.storyboard */; };
+		BFAE9E621C45EE8B0038AB88 /* PhotosCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E611C45EE8B0038AB88 /* PhotosCollectionView.m */; };
+		BFAE9E641C45EE970038AB88 /* PhotosCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E631C45EE970038AB88 /* PhotosCollectionView.xib */; };
+		BFAE9E671C45EF220038AB88 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E661C45EF220038AB88 /* BaseCollectionView.m */; };
+		BFAE9E6C1C45EF8B0038AB88 /* PhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E6A1C45EF8B0038AB88 /* PhotosCollectionViewCell.m */; };
+		BFAE9E721C45F1520038AB88 /* PhotosCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E711C45F1520038AB88 /* PhotosCollectionModel.m */; };
+		BFAE9E761C4607FC0038AB88 /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E751C4607FC0038AB88 /* PhotosCollectionViewCell.xib */; };
+		BFAE9E7A1C477CAA0038AB88 /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E791C477CAA0038AB88 /* PhotoBrowserViewController.m */; };
+		BFAE9E7C1C477CB80038AB88 /* PhotoBrowserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAE9E7B1C477CB80038AB88 /* PhotoBrowserViewController.storyboard */; };
+		BFAE9E801C477D120038AB88 /* PhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAE9E7F1C477D120038AB88 /* PhotoBrowserView.m */; };
+		BFCBDAC91C3CC347007DC5BB /* CategoryArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFCBDAC81C3CC347007DC5BB /* CategoryArray.plist */; };
+		BFCBDAD31C3D1D0A007DC5BB /* AlbumsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCBDAD21C3D1D0A007DC5BB /* AlbumsModel.m */; };
+		BFCBDAE01C3E0812007DC5BB /* CompetenceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFCBDADF1C3E0812007DC5BB /* CompetenceArray.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF943B741C33B4CA00D8AB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF943B521C33B4CA00D8AB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF943B591C33B4CA00D8AB0D;
+			remoteInfo = PIXUploadPhoto;
+		};
+		BF943B7F1C33B4CA00D8AB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF943B521C33B4CA00D8AB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF943B591C33B4CA00D8AB0D;
+			remoteInfo = PIXUploadPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D4464AA5B033DAFF2A1936 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DCD4E6215AE301186FD7AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF5723A41C60469500D19F7F /* PhotosModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosModel.h; sourceTree = "<group>"; };
+		BF5723A51C60469500D19F7F /* PhotosModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosModel.m; sourceTree = "<group>"; };
+		BF5723A71C60475100D19F7F /* FixAlbumsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixAlbumsView.h; sourceTree = "<group>"; };
+		BF5723A81C60475100D19F7F /* FixAlbumsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixAlbumsView.m; sourceTree = "<group>"; };
+		BF5723AA1C60476C00D19F7F /* FixAlbumsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixAlbumsView.xib; sourceTree = "<group>"; };
+		BF5723ED1C63329700D19F7F /* UploadHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadHistoryViewController.h; sourceTree = "<group>"; };
+		BF5723EE1C63329700D19F7F /* UploadHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadHistoryViewController.m; sourceTree = "<group>"; };
+		BF5723F01C63345800D19F7F /* UploadHistoryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UploadHistoryViewController.storyboard; sourceTree = "<group>"; };
+		BF5723F21C63395900D19F7F /* UploadHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UploadHistoryTableViewCell.h; path = ../../../Controller/UploadHistoryViewController/UploadHistoryTableViewCell.h; sourceTree = "<group>"; };
+		BF5723F31C63395900D19F7F /* UploadHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UploadHistoryTableViewCell.m; path = ../../../Controller/UploadHistoryViewController/UploadHistoryTableViewCell.m; sourceTree = "<group>"; };
+		BF943B5A1C33B4CA00D8AB0D /* PIXUploadPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIXUploadPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF943B5E1C33B4CA00D8AB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF943B601C33B4CA00D8AB0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF943B611C33B4CA00D8AB0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF943B671C33B4CA00D8AB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF943B691C33B4CA00D8AB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF943B6C1C33B4CA00D8AB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF943B6E1C33B4CA00D8AB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF943B731C33B4CA00D8AB0D /* PIXUploadPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIXUploadPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF943B771C33B4CA00D8AB0D /* PIXUploadPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIXUploadPhotoTests.m; sourceTree = "<group>"; };
+		BF943B791C33B4CA00D8AB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF943B7E1C33B4CA00D8AB0D /* PIXUploadPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIXUploadPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF943B821C33B4CA00D8AB0D /* PIXUploadPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIXUploadPhotoUITests.m; sourceTree = "<group>"; };
+		BF943B841C33B4CA00D8AB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF943BD51C3A0C9200D8AB0D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BF943BD61C3A0C9200D8AB0D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BF943BD81C3A0CC400D8AB0D /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		BF943BD91C3A0CC400D8AB0D /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		BF943BDF1C3A0E4100D8AB0D /* UIColor+PIXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PIXCategory.h"; sourceTree = "<group>"; };
+		BF943BE01C3A0E4100D8AB0D /* UIColor+PIXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PIXCategory.m"; sourceTree = "<group>"; };
+		BF943BE21C3A0E4100D8AB0D /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		BF943BE31C3A0E4100D8AB0D /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		BF943BE51C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PIXTextFieldCategory.h"; sourceTree = "<group>"; };
+		BF943BE61C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PIXTextFieldCategory.m"; sourceTree = "<group>"; };
+		BF943BE81C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PIXTextViewCategory.h"; sourceTree = "<group>"; };
+		BF943BE91C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PIXTextViewCategory.m"; sourceTree = "<group>"; };
+		BF943BEF1C3A0E6200D8AB0D /* APIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIObject.h; sourceTree = "<group>"; };
+		BF943BF01C3A0E6200D8AB0D /* APIObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIObject.m; sourceTree = "<group>"; };
+		BF943BF21C3A0E6200D8AB0D /* EncodeUTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodeUTF8.h; sourceTree = "<group>"; };
+		BF943BF31C3A0E6200D8AB0D /* EncodeUTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncodeUTF8.m; sourceTree = "<group>"; };
+		BF943BF61C3A0E9C00D8AB0D /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		BF943BF71C3A101700D8AB0D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		BF943BF81C3A101700D8AB0D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		BF943BFA1C3A102800D8AB0D /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		BF943BFB1C3A102800D8AB0D /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		BF943BFE1C3A10EE00D8AB0D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BF943BFF1C3A10EE00D8AB0D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BF943C021C3A160B00D8AB0D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BF943C031C3A160B00D8AB0D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BF943C051C3A162C00D8AB0D /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		BF943C081C3A1F5700D8AB0D /* CheckHasLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckHasLogin.h; sourceTree = "<group>"; };
+		BF943C091C3A1F5700D8AB0D /* CheckHasLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckHasLogin.m; sourceTree = "<group>"; };
+		BF943C121C3BBFFA00D8AB0D /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
+		BF943C131C3BBFFA00D8AB0D /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
+		BF943C151C3BC03300D8AB0D /* AlbumsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlbumsViewController.storyboard; sourceTree = "<group>"; };
+		BFAE9DEE1C3F62620038AB88 /* NSString+DeleteBlankText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DeleteBlankText.h"; sourceTree = "<group>"; };
+		BFAE9DEF1C3F62620038AB88 /* NSString+DeleteBlankText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DeleteBlankText.m"; sourceTree = "<group>"; };
+		BFAE9DF21C3F6B970038AB88 /* AddAlbumsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlbumsView.h; sourceTree = "<group>"; };
+		BFAE9DF31C3F6B970038AB88 /* AddAlbumsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlbumsView.m; sourceTree = "<group>"; };
+		BFAE9DF41C3F6B970038AB88 /* AddAlbumsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAlbumsView.xib; sourceTree = "<group>"; };
+		BFAE9DF91C3F99D00038AB88 /* CategoryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableView.h; sourceTree = "<group>"; };
+		BFAE9DFA1C3F99D00038AB88 /* CategoryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableView.m; sourceTree = "<group>"; };
+		BFAE9DFC1C3F99D00038AB88 /* CompetenceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompetenceTableView.h; sourceTree = "<group>"; };
+		BFAE9DFD1C3F99D00038AB88 /* CompetenceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompetenceTableView.m; sourceTree = "<group>"; };
+		BFAE9DFF1C3F99D00038AB88 /* CustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderView.h; sourceTree = "<group>"; };
+		BFAE9E001C3F99D00038AB88 /* CustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderView.m; sourceTree = "<group>"; };
+		BFAE9E021C3F99D00038AB88 /* PasswordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordTableViewCell.h; sourceTree = "<group>"; };
+		BFAE9E031C3F99D00038AB88 /* PasswordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordTableViewCell.m; sourceTree = "<group>"; };
+		BFAE9E041C3F99D00038AB88 /* PasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordTableViewCell.xib; sourceTree = "<group>"; };
+		BFAE9E0A1C3F9A200038AB88 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		BFAE9E0B1C3F9A200038AB88 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		BFAE9E201C3FAA170038AB88 /* AlbumsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsCollectionView.h; sourceTree = "<group>"; };
+		BFAE9E211C3FAA170038AB88 /* AlbumsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsCollectionView.m; sourceTree = "<group>"; };
+		BFAE9E231C3FAA170038AB88 /* AlbumsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsCollectionViewCell.h; sourceTree = "<group>"; };
+		BFAE9E241C3FAA170038AB88 /* AlbumsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsCollectionViewCell.m; sourceTree = "<group>"; };
+		BFAE9E251C3FAA170038AB88 /* AlbumsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumsCollectionViewCell.xib; sourceTree = "<group>"; };
+		BFAE9E2F1C3FBDCB0038AB88 /* AlbumsCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumsCollectionView.xib; sourceTree = "<group>"; };
+		BFAE9E321C4354E60038AB88 /* AlbumsCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsCollectionModel.h; sourceTree = "<group>"; };
+		BFAE9E331C4354E60038AB88 /* AlbumsCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsCollectionModel.m; sourceTree = "<group>"; };
+		BFAE9E371C4490250038AB88 /* SelectUploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectUploadImageViewController.h; sourceTree = "<group>"; };
+		BFAE9E381C4490250038AB88 /* SelectUploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectUploadImageViewController.m; sourceTree = "<group>"; };
+		BFAE9E3A1C4490380038AB88 /* SelectUploadImageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectUploadImageViewController.storyboard; sourceTree = "<group>"; };
+		BFAE9E3C1C4490530038AB88 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		BFAE9E3E1C4490620038AB88 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		BFAE9E3F1C4490620038AB88 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		BFAE9E421C44A8680038AB88 /* ZYQAssetPicker.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYQAssetPicker.Bundle; sourceTree = "<group>"; };
+		BFAE9E431C44A8680038AB88 /* ZYQAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQAssetPickerController.h; sourceTree = "<group>"; };
+		BFAE9E441C44A8680038AB88 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
+		BFAE9E481C44D8E30038AB88 /* SelectUploadImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectUploadImageModel.h; sourceTree = "<group>"; };
+		BFAE9E491C44D8E30038AB88 /* SelectUploadImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectUploadImageModel.m; sourceTree = "<group>"; };
+		BFAE9E4C1C44EF260038AB88 /* SelectUploadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectUploadImageView.h; sourceTree = "<group>"; };
+		BFAE9E4D1C44EF260038AB88 /* SelectUploadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectUploadImageView.m; sourceTree = "<group>"; };
+		BFAE9E501C44EF740038AB88 /* SelectAlbumsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlbumsTableView.h; sourceTree = "<group>"; };
+		BFAE9E511C44EF740038AB88 /* SelectAlbumsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumsTableView.m; sourceTree = "<group>"; };
+		BFAE9E541C44F02B0038AB88 /* SelectAlbumsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlbumsModel.h; sourceTree = "<group>"; };
+		BFAE9E551C44F02B0038AB88 /* SelectAlbumsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumsModel.m; sourceTree = "<group>"; };
+		BFAE9E581C45EC7B0038AB88 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		BFAE9E591C45EC7B0038AB88 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		BFAE9E5B1C45EC880038AB88 /* PhotosViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotosViewController.storyboard; sourceTree = "<group>"; };
+		BFAE9E601C45EE8B0038AB88 /* PhotosCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionView.h; sourceTree = "<group>"; };
+		BFAE9E611C45EE8B0038AB88 /* PhotosCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionView.m; sourceTree = "<group>"; };
+		BFAE9E631C45EE970038AB88 /* PhotosCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosCollectionView.xib; sourceTree = "<group>"; };
+		BFAE9E651C45EF220038AB88 /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
+		BFAE9E661C45EF220038AB88 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
+		BFAE9E691C45EF8B0038AB88 /* PhotosCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionViewCell.h; sourceTree = "<group>"; };
+		BFAE9E6A1C45EF8B0038AB88 /* PhotosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionViewCell.m; sourceTree = "<group>"; };
+		BFAE9E701C45F1520038AB88 /* PhotosCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionModel.h; sourceTree = "<group>"; };
+		BFAE9E711C45F1520038AB88 /* PhotosCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionModel.m; sourceTree = "<group>"; };
+		BFAE9E751C4607FC0038AB88 /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
+		BFAE9E781C477CAA0038AB88 /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserViewController.h; sourceTree = "<group>"; };
+		BFAE9E791C477CAA0038AB88 /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserViewController.m; sourceTree = "<group>"; };
+		BFAE9E7B1C477CB80038AB88 /* PhotoBrowserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowserViewController.storyboard; sourceTree = "<group>"; };
+		BFAE9E7E1C477D120038AB88 /* PhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserView.h; sourceTree = "<group>"; };
+		BFAE9E7F1C477D120038AB88 /* PhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserView.m; sourceTree = "<group>"; };
+		BFCBDAC81C3CC347007DC5BB /* CategoryArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategoryArray.plist; sourceTree = "<group>"; };
+		BFCBDAD11C3D1D0A007DC5BB /* AlbumsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsModel.h; sourceTree = "<group>"; };
+		BFCBDAD21C3D1D0A007DC5BB /* AlbumsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsModel.m; sourceTree = "<group>"; };
+		BFCBDADF1C3E0812007DC5BB /* CompetenceArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CompetenceArray.plist; sourceTree = "<group>"; };
+		CFFE0EB20AA523832F405B9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF943B571C33B4CA00D8AB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504555B3A0CA485A2C4E4BB0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B701C33B4CA00D8AB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B7B1C33B4CA00D8AB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		478D1CCD01794BFE12CFF7FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE0EB20AA523832F405B9E /* Pods.debug.xcconfig */,
+				74DCD4E6215AE301186FD7AF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF5723EB1C63326000D19F7F /* UploadHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF5723ED1C63329700D19F7F /* UploadHistoryViewController.h */,
+				BF5723EE1C63329700D19F7F /* UploadHistoryViewController.m */,
+				BF5723F01C63345800D19F7F /* UploadHistoryViewController.storyboard */,
+			);
+			path = UploadHistoryViewController;
+			sourceTree = "<group>";
+		};
+		BF5723EC1C63327C00D19F7F /* UploadHistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				BF5723F21C63395900D19F7F /* UploadHistoryTableViewCell.h */,
+				BF5723F31C63395900D19F7F /* UploadHistoryTableViewCell.m */,
+			);
+			name = UploadHistoryView;
+			path = AlbumsView/UploadHistoryView;
+			sourceTree = "<group>";
+		};
+		BF943B511C33B4CA00D8AB0D = {
+			isa = PBXGroup;
+			children = (
+				BF943B5C1C33B4CA00D8AB0D /* PIXUploadPhoto */,
+				BF943BDB1C3A0D8900D8AB0D /* Costom */,
+				BFCBDAC31C3CBEC0007DC5BB /* Resources */,
+				BF943B761C33B4CA00D8AB0D /* PIXUploadPhotoTests */,
+				BF943B811C33B4CA00D8AB0D /* PIXUploadPhotoUITests */,
+				BF943B5B1C33B4CA00D8AB0D /* Products */,
+				478D1CCD01794BFE12CFF7FD /* Pods */,
+				C4AA6A647797B7BCB4026246 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF943B5B1C33B4CA00D8AB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF943B5A1C33B4CA00D8AB0D /* PIXUploadPhoto.app */,
+				BF943B731C33B4CA00D8AB0D /* PIXUploadPhotoTests.xctest */,
+				BF943B7E1C33B4CA00D8AB0D /* PIXUploadPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF943B5C1C33B4CA00D8AB0D /* PIXUploadPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BD11C3A0BEE00D8AB0D /* Model */,
+				BF943BD01C3A0BE900D8AB0D /* View */,
+				BF943BCF1C3A0BE300D8AB0D /* Controller */,
+				BF943B601C33B4CA00D8AB0D /* AppDelegate.h */,
+				BF943B611C33B4CA00D8AB0D /* AppDelegate.m */,
+				BF943BF61C3A0E9C00D8AB0D /* Global.h */,
+				BF943B661C33B4CA00D8AB0D /* Main.storyboard */,
+				BF943B691C33B4CA00D8AB0D /* Assets.xcassets */,
+				BF943B6B1C33B4CA00D8AB0D /* LaunchScreen.storyboard */,
+				BF943B6E1C33B4CA00D8AB0D /* Info.plist */,
+				BF943B5D1C33B4CA00D8AB0D /* Supporting Files */,
+			);
+			path = PIXUploadPhoto;
+			sourceTree = "<group>";
+		};
+		BF943B5D1C33B4CA00D8AB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF943B5E1C33B4CA00D8AB0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF943B761C33B4CA00D8AB0D /* PIXUploadPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF943B771C33B4CA00D8AB0D /* PIXUploadPhotoTests.m */,
+				BF943B791C33B4CA00D8AB0D /* Info.plist */,
+			);
+			path = PIXUploadPhotoTests;
+			sourceTree = "<group>";
+		};
+		BF943B811C33B4CA00D8AB0D /* PIXUploadPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF943B821C33B4CA00D8AB0D /* PIXUploadPhotoUITests.m */,
+				BF943B841C33B4CA00D8AB0D /* Info.plist */,
+			);
+			path = PIXUploadPhotoUITests;
+			sourceTree = "<group>";
+		};
+		BF943BCF1C3A0BE300D8AB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BD31C3A0C3800D8AB0D /* BaseViewController */,
+				BF943BFD1C3A10DC00D8AB0D /* MainViewController */,
+				BF943C011C3A15FB00D8AB0D /* LoginViewController */,
+				BF943C0B1C3BBF0800D8AB0D /* AlbumsViewController */,
+				BFAE9E351C448FBF0038AB88 /* SelectUploadImageViewController */,
+				BFAE9E361C448FFF0038AB88 /* ProfileViewController */,
+				BF5723EB1C63326000D19F7F /* UploadHistoryViewController */,
+				BFAE9E571C45EC4C0038AB88 /* PhotosViewController */,
+				BFAE9E771C477C8B0038AB88 /* PhotoBrowserViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF943BD01C3A0BE900D8AB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BD21C3A0C2D00D8AB0D /* BaseView */,
+				BF943C0F1C3BBF9100D8AB0D /* MainView */,
+				BF943C101C3BBFAF00D8AB0D /* LoginView */,
+				BF943C111C3BBFD300D8AB0D /* AlbumsView */,
+				BFAE9E4B1C44EF060038AB88 /* SelectUploadImageView */,
+				BF5723EC1C63327C00D19F7F /* UploadHistoryView */,
+				BFAE9E5E1C45EE440038AB88 /* PhotosView */,
+				BFAE9E7D1C477CE60038AB88 /* PhotoBrowserView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF943BD11C3A0BEE00D8AB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BD41C3A0C4100D8AB0D /* BaseModel */,
+				BF943C0C1C3BBF3700D8AB0D /* MainModel */,
+				BF943C0D1C3BBF3D00D8AB0D /* LoginModel */,
+				BF943C0E1C3BBF6C00D8AB0D /* AlbumsModel */,
+				BFAE9E471C44D8D30038AB88 /* SelectUploadImageModel */,
+				BFAE9E6E1C45F1220038AB88 /* PhotosModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF943BD21C3A0C2D00D8AB0D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BFA1C3A102800D8AB0D /* BaseView.h */,
+				BF943BFB1C3A102800D8AB0D /* BaseView.m */,
+				BFAE9E0A1C3F9A200038AB88 /* BaseTableView.h */,
+				BFAE9E0B1C3F9A200038AB88 /* BaseTableView.m */,
+				BFAE9E651C45EF220038AB88 /* BaseCollectionView.h */,
+				BFAE9E661C45EF220038AB88 /* BaseCollectionView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		BF943BD31C3A0C3800D8AB0D /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BD51C3A0C9200D8AB0D /* BaseViewController.h */,
+				BF943BD61C3A0C9200D8AB0D /* BaseViewController.m */,
+				BF943BD81C3A0CC400D8AB0D /* BaseTableViewController.h */,
+				BF943BD91C3A0CC400D8AB0D /* BaseTableViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		BF943BD41C3A0C4100D8AB0D /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BF71C3A101700D8AB0D /* BaseModel.h */,
+				BF943BF81C3A101700D8AB0D /* BaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		BF943BDB1C3A0D8900D8AB0D /* Costom */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BDC1C3A0DA200D8AB0D /* Category */,
+				BF943BDD1C3A0DA200D8AB0D /* Library */,
+			);
+			name = Costom;
+			path = PIXUploadPhoto/Costom;
+			sourceTree = "<group>";
+		};
+		BF943BDC1C3A0DA200D8AB0D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DED1C3F62580038AB88 /* NSString+DeleteBlankText */,
+				BF943BDE1C3A0E4100D8AB0D /* UIColor+PIXCategory */,
+				BF943BE11C3A0E4100D8AB0D /* UIImageView+SDWebImage */,
+				BF943BE41C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory */,
+				BF943BE71C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BF943BDD1C3A0DA200D8AB0D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E411C44A8680038AB88 /* ZYQAssetPickerController */,
+				BF943C071C3A1F5700D8AB0D /* CheckHasLogin */,
+				BF943BEE1C3A0E6200D8AB0D /* APIObject */,
+				BF943BF11C3A0E6200D8AB0D /* EncodeUTF8 */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BF943BDE1C3A0E4100D8AB0D /* UIColor+PIXCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BDF1C3A0E4100D8AB0D /* UIColor+PIXCategory.h */,
+				BF943BE01C3A0E4100D8AB0D /* UIColor+PIXCategory.m */,
+			);
+			path = "UIColor+PIXCategory";
+			sourceTree = "<group>";
+		};
+		BF943BE11C3A0E4100D8AB0D /* UIImageView+SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BE21C3A0E4100D8AB0D /* UIImageView+SDWebImage.h */,
+				BF943BE31C3A0E4100D8AB0D /* UIImageView+SDWebImage.m */,
+			);
+			path = "UIImageView+SDWebImage";
+			sourceTree = "<group>";
+		};
+		BF943BE41C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BE51C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.h */,
+				BF943BE61C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.m */,
+			);
+			path = "UITextField+PIXTextFieldCategory";
+			sourceTree = "<group>";
+		};
+		BF943BE71C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BE81C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.h */,
+				BF943BE91C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.m */,
+			);
+			path = "UITextView+PIXTextViewCategory";
+			sourceTree = "<group>";
+		};
+		BF943BEE1C3A0E6200D8AB0D /* APIObject */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BEF1C3A0E6200D8AB0D /* APIObject.h */,
+				BF943BF01C3A0E6200D8AB0D /* APIObject.m */,
+			);
+			path = APIObject;
+			sourceTree = "<group>";
+		};
+		BF943BF11C3A0E6200D8AB0D /* EncodeUTF8 */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BF21C3A0E6200D8AB0D /* EncodeUTF8.h */,
+				BF943BF31C3A0E6200D8AB0D /* EncodeUTF8.m */,
+			);
+			path = EncodeUTF8;
+			sourceTree = "<group>";
+		};
+		BF943BFD1C3A10DC00D8AB0D /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF943BFE1C3A10EE00D8AB0D /* MainViewController.h */,
+				BF943BFF1C3A10EE00D8AB0D /* MainViewController.m */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		BF943C011C3A15FB00D8AB0D /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF943C021C3A160B00D8AB0D /* LoginViewController.h */,
+				BF943C031C3A160B00D8AB0D /* LoginViewController.m */,
+				BF943C051C3A162C00D8AB0D /* LoginViewController.storyboard */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		BF943C071C3A1F5700D8AB0D /* CheckHasLogin */ = {
+			isa = PBXGroup;
+			children = (
+				BF943C081C3A1F5700D8AB0D /* CheckHasLogin.h */,
+				BF943C091C3A1F5700D8AB0D /* CheckHasLogin.m */,
+			);
+			path = CheckHasLogin;
+			sourceTree = "<group>";
+		};
+		BF943C0B1C3BBF0800D8AB0D /* AlbumsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF943C121C3BBFFA00D8AB0D /* AlbumsViewController.h */,
+				BF943C131C3BBFFA00D8AB0D /* AlbumsViewController.m */,
+				BF943C151C3BC03300D8AB0D /* AlbumsViewController.storyboard */,
+			);
+			path = AlbumsViewController;
+			sourceTree = "<group>";
+		};
+		BF943C0C1C3BBF3700D8AB0D /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		BF943C0D1C3BBF3D00D8AB0D /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		BF943C0E1C3BBF6C00D8AB0D /* AlbumsModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFCBDAD11C3D1D0A007DC5BB /* AlbumsModel.h */,
+				BFCBDAD21C3D1D0A007DC5BB /* AlbumsModel.m */,
+				BFAE9E311C4354CE0038AB88 /* AlbumsCollectionModel */,
+			);
+			name = AlbumsModel;
+			path = PIXUploadPhoto/Model/AlbumsModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF943C0F1C3BBF9100D8AB0D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainView;
+			path = PIXUploadPhoto/View/MainView;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF943C101C3BBFAF00D8AB0D /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LoginView;
+			path = PIXUploadPhoto/View/LoginView;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF943C111C3BBFD300D8AB0D /* AlbumsView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E1F1C3FAA170038AB88 /* AlbumsCollectionView */,
+				BFAE9DF11C3F6B970038AB88 /* AddAlbumsView */,
+			);
+			path = AlbumsView;
+			sourceTree = "<group>";
+		};
+		BFAE9DED1C3F62580038AB88 /* NSString+DeleteBlankText */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DEE1C3F62620038AB88 /* NSString+DeleteBlankText.h */,
+				BFAE9DEF1C3F62620038AB88 /* NSString+DeleteBlankText.m */,
+			);
+			path = "NSString+DeleteBlankText";
+			sourceTree = "<group>";
+		};
+		BFAE9DF11C3F6B970038AB88 /* AddAlbumsView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DF21C3F6B970038AB88 /* AddAlbumsView.h */,
+				BFAE9DF31C3F6B970038AB88 /* AddAlbumsView.m */,
+				BFAE9DF41C3F6B970038AB88 /* AddAlbumsView.xib */,
+				BFAE9DF81C3F99D00038AB88 /* CategoryTableView */,
+				BFAE9DFB1C3F99D00038AB88 /* CompetenceTableView */,
+				BFAE9DFE1C3F99D00038AB88 /* CustomHeaderView */,
+				BFAE9E011C3F99D00038AB88 /* PasswordTableViewCell */,
+			);
+			path = AddAlbumsView;
+			sourceTree = "<group>";
+		};
+		BFAE9DF81C3F99D00038AB88 /* CategoryTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DF91C3F99D00038AB88 /* CategoryTableView.h */,
+				BFAE9DFA1C3F99D00038AB88 /* CategoryTableView.m */,
+			);
+			path = CategoryTableView;
+			sourceTree = "<group>";
+		};
+		BFAE9DFB1C3F99D00038AB88 /* CompetenceTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DFC1C3F99D00038AB88 /* CompetenceTableView.h */,
+				BFAE9DFD1C3F99D00038AB88 /* CompetenceTableView.m */,
+			);
+			path = CompetenceTableView;
+			sourceTree = "<group>";
+		};
+		BFAE9DFE1C3F99D00038AB88 /* CustomHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9DFF1C3F99D00038AB88 /* CustomHeaderView.h */,
+				BFAE9E001C3F99D00038AB88 /* CustomHeaderView.m */,
+			);
+			path = CustomHeaderView;
+			sourceTree = "<group>";
+		};
+		BFAE9E011C3F99D00038AB88 /* PasswordTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E021C3F99D00038AB88 /* PasswordTableViewCell.h */,
+				BFAE9E031C3F99D00038AB88 /* PasswordTableViewCell.m */,
+				BFAE9E041C3F99D00038AB88 /* PasswordTableViewCell.xib */,
+			);
+			path = PasswordTableViewCell;
+			sourceTree = "<group>";
+		};
+		BFAE9E1F1C3FAA170038AB88 /* AlbumsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E201C3FAA170038AB88 /* AlbumsCollectionView.h */,
+				BFAE9E211C3FAA170038AB88 /* AlbumsCollectionView.m */,
+				BFAE9E2F1C3FBDCB0038AB88 /* AlbumsCollectionView.xib */,
+				BFAE9E221C3FAA170038AB88 /* AlbumsCollectionViewCell */,
+			);
+			path = AlbumsCollectionView;
+			sourceTree = "<group>";
+		};
+		BFAE9E221C3FAA170038AB88 /* AlbumsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E231C3FAA170038AB88 /* AlbumsCollectionViewCell.h */,
+				BFAE9E241C3FAA170038AB88 /* AlbumsCollectionViewCell.m */,
+				BFAE9E251C3FAA170038AB88 /* AlbumsCollectionViewCell.xib */,
+			);
+			path = AlbumsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		BFAE9E311C4354CE0038AB88 /* AlbumsCollectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E321C4354E60038AB88 /* AlbumsCollectionModel.h */,
+				BFAE9E331C4354E60038AB88 /* AlbumsCollectionModel.m */,
+			);
+			path = AlbumsCollectionModel;
+			sourceTree = "<group>";
+		};
+		BFAE9E351C448FBF0038AB88 /* SelectUploadImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E371C4490250038AB88 /* SelectUploadImageViewController.h */,
+				BFAE9E381C4490250038AB88 /* SelectUploadImageViewController.m */,
+				BFAE9E3A1C4490380038AB88 /* SelectUploadImageViewController.storyboard */,
+			);
+			path = SelectUploadImageViewController;
+			sourceTree = "<group>";
+		};
+		BFAE9E361C448FFF0038AB88 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E3E1C4490620038AB88 /* ProfileViewController.h */,
+				BFAE9E3F1C4490620038AB88 /* ProfileViewController.m */,
+				BFAE9E3C1C4490530038AB88 /* ProfileViewController.storyboard */,
+			);
+			name = ProfileViewController;
+			path = PIXUploadPhoto/Controller/ProfileViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFAE9E411C44A8680038AB88 /* ZYQAssetPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E421C44A8680038AB88 /* ZYQAssetPicker.Bundle */,
+				BFAE9E431C44A8680038AB88 /* ZYQAssetPickerController.h */,
+				BFAE9E441C44A8680038AB88 /* ZYQAssetPickerController.m */,
+			);
+			path = ZYQAssetPickerController;
+			sourceTree = "<group>";
+		};
+		BFAE9E471C44D8D30038AB88 /* SelectUploadImageModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E481C44D8E30038AB88 /* SelectUploadImageModel.h */,
+				BFAE9E491C44D8E30038AB88 /* SelectUploadImageModel.m */,
+				BFAE9E531C44F01B0038AB88 /* SelectAlbumsModel */,
+			);
+			path = SelectUploadImageModel;
+			sourceTree = "<group>";
+		};
+		BFAE9E4B1C44EF060038AB88 /* SelectUploadImageView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E4C1C44EF260038AB88 /* SelectUploadImageView.h */,
+				BFAE9E4D1C44EF260038AB88 /* SelectUploadImageView.m */,
+				BFAE9E4F1C44EF640038AB88 /* SelectAlbumsTableView */,
+			);
+			name = SelectUploadImageView;
+			path = AlbumsView/SelectUploadImageView;
+			sourceTree = "<group>";
+		};
+		BFAE9E4F1C44EF640038AB88 /* SelectAlbumsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E501C44EF740038AB88 /* SelectAlbumsTableView.h */,
+				BFAE9E511C44EF740038AB88 /* SelectAlbumsTableView.m */,
+			);
+			path = SelectAlbumsTableView;
+			sourceTree = "<group>";
+		};
+		BFAE9E531C44F01B0038AB88 /* SelectAlbumsModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E541C44F02B0038AB88 /* SelectAlbumsModel.h */,
+				BFAE9E551C44F02B0038AB88 /* SelectAlbumsModel.m */,
+			);
+			path = SelectAlbumsModel;
+			sourceTree = "<group>";
+		};
+		BFAE9E571C45EC4C0038AB88 /* PhotosViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E581C45EC7B0038AB88 /* PhotosViewController.h */,
+				BFAE9E591C45EC7B0038AB88 /* PhotosViewController.m */,
+				BFAE9E5B1C45EC880038AB88 /* PhotosViewController.storyboard */,
+			);
+			name = PhotosViewController;
+			path = PIXUploadPhoto/Controller/PhotosViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFAE9E5E1C45EE440038AB88 /* PhotosView */ = {
+			isa = PBXGroup;
+			children = (
+				BF5723A71C60475100D19F7F /* FixAlbumsView.h */,
+				BF5723A81C60475100D19F7F /* FixAlbumsView.m */,
+				BF5723AA1C60476C00D19F7F /* FixAlbumsView.xib */,
+				BFAE9E5F1C45EE440038AB88 /* PhotosCollectionView */,
+			);
+			name = PhotosView;
+			path = PIXUploadPhoto/View/AlbumsView/PhotosView;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFAE9E5F1C45EE440038AB88 /* PhotosCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E601C45EE8B0038AB88 /* PhotosCollectionView.h */,
+				BFAE9E611C45EE8B0038AB88 /* PhotosCollectionView.m */,
+				BFAE9E631C45EE970038AB88 /* PhotosCollectionView.xib */,
+				BFAE9E681C45EF780038AB88 /* PhotosCollectionViewCell */,
+			);
+			path = PhotosCollectionView;
+			sourceTree = "<group>";
+		};
+		BFAE9E681C45EF780038AB88 /* PhotosCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E691C45EF8B0038AB88 /* PhotosCollectionViewCell.h */,
+				BFAE9E6A1C45EF8B0038AB88 /* PhotosCollectionViewCell.m */,
+				BFAE9E751C4607FC0038AB88 /* PhotosCollectionViewCell.xib */,
+			);
+			path = PhotosCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		BFAE9E6E1C45F1220038AB88 /* PhotosModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF5723A41C60469500D19F7F /* PhotosModel.h */,
+				BF5723A51C60469500D19F7F /* PhotosModel.m */,
+				BFAE9E6F1C45F1220038AB88 /* PhotosCollectionModel */,
+			);
+			name = PhotosModel;
+			path = PIXUploadPhoto/Model/PhotosModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFAE9E6F1C45F1220038AB88 /* PhotosCollectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E701C45F1520038AB88 /* PhotosCollectionModel.h */,
+				BFAE9E711C45F1520038AB88 /* PhotosCollectionModel.m */,
+			);
+			path = PhotosCollectionModel;
+			sourceTree = "<group>";
+		};
+		BFAE9E771C477C8B0038AB88 /* PhotoBrowserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E781C477CAA0038AB88 /* PhotoBrowserViewController.h */,
+				BFAE9E791C477CAA0038AB88 /* PhotoBrowserViewController.m */,
+				BFAE9E7B1C477CB80038AB88 /* PhotoBrowserViewController.storyboard */,
+			);
+			path = PhotoBrowserViewController;
+			sourceTree = "<group>";
+		};
+		BFAE9E7D1C477CE60038AB88 /* PhotoBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				BFAE9E7E1C477D120038AB88 /* PhotoBrowserView.h */,
+				BFAE9E7F1C477D120038AB88 /* PhotoBrowserView.m */,
+			);
+			name = PhotoBrowserView;
+			path = PIXUploadPhoto/View/AlbumsView/PhotoBrowserView;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFCBDAC31C3CBEC0007DC5BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFCBDAC81C3CC347007DC5BB /* CategoryArray.plist */,
+				BFCBDADF1C3E0812007DC5BB /* CompetenceArray.plist */,
+			);
+			name = Resources;
+			path = PIXUploadPhoto/Resources;
+			sourceTree = "<group>";
+		};
+		C4AA6A647797B7BCB4026246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D4464AA5B033DAFF2A1936 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF943B591C33B4CA00D8AB0D /* PIXUploadPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF943B871C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhoto" */;
+			buildPhases = (
+				AEE3C43F156D7C0EDC449505 /* Check Pods Manifest.lock */,
+				BF943B561C33B4CA00D8AB0D /* Sources */,
+				BF943B571C33B4CA00D8AB0D /* Frameworks */,
+				BF943B581C33B4CA00D8AB0D /* Resources */,
+				BB0AF171568D24DDC5E6A75B /* Copy Pods Resources */,
+				BFABA00B1C7FEACB00D548B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIXUploadPhoto;
+			productName = PIXUploadPhoto;
+			productReference = BF943B5A1C33B4CA00D8AB0D /* PIXUploadPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF943B721C33B4CA00D8AB0D /* PIXUploadPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF943B8A1C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhotoTests" */;
+			buildPhases = (
+				BF943B6F1C33B4CA00D8AB0D /* Sources */,
+				BF943B701C33B4CA00D8AB0D /* Frameworks */,
+				BF943B711C33B4CA00D8AB0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF943B751C33B4CA00D8AB0D /* PBXTargetDependency */,
+			);
+			name = PIXUploadPhotoTests;
+			productName = PIXUploadPhotoTests;
+			productReference = BF943B731C33B4CA00D8AB0D /* PIXUploadPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF943B7D1C33B4CA00D8AB0D /* PIXUploadPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF943B8D1C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhotoUITests" */;
+			buildPhases = (
+				BF943B7A1C33B4CA00D8AB0D /* Sources */,
+				BF943B7B1C33B4CA00D8AB0D /* Frameworks */,
+				BF943B7C1C33B4CA00D8AB0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF943B801C33B4CA00D8AB0D /* PBXTargetDependency */,
+			);
+			name = PIXUploadPhotoUITests;
+			productName = PIXUploadPhotoUITests;
+			productReference = BF943B7E1C33B4CA00D8AB0D /* PIXUploadPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF943B521C33B4CA00D8AB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = shadow;
+				TargetAttributes = {
+					BF943B591C33B4CA00D8AB0D = {
+						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BF943B721C33B4CA00D8AB0D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF943B591C33B4CA00D8AB0D;
+					};
+					BF943B7D1C33B4CA00D8AB0D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF943B591C33B4CA00D8AB0D;
+					};
+				};
+			};
+			buildConfigurationList = BF943B551C33B4CA00D8AB0D /* Build configuration list for PBXProject "PIXUploadPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF943B511C33B4CA00D8AB0D;
+			productRefGroup = BF943B5B1C33B4CA00D8AB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF943B591C33B4CA00D8AB0D /* PIXUploadPhoto */,
+				BF943B721C33B4CA00D8AB0D /* PIXUploadPhotoTests */,
+				BF943B7D1C33B4CA00D8AB0D /* PIXUploadPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF943B581C33B4CA00D8AB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF943C161C3BC03300D8AB0D /* AlbumsViewController.storyboard in Resources */,
+				BFCBDAE01C3E0812007DC5BB /* CompetenceArray.plist in Resources */,
+				BF943B6D1C33B4CA00D8AB0D /* LaunchScreen.storyboard in Resources */,
+				BFAE9E451C44A8680038AB88 /* ZYQAssetPicker.Bundle in Resources */,
+				BFAE9E281C3FAA170038AB88 /* AlbumsCollectionViewCell.xib in Resources */,
+				BF5723AB1C60476C00D19F7F /* FixAlbumsView.xib in Resources */,
+				BF943C061C3A162C00D8AB0D /* LoginViewController.storyboard in Resources */,
+				BFAE9E5C1C45EC880038AB88 /* PhotosViewController.storyboard in Resources */,
+				BF943B6A1C33B4CA00D8AB0D /* Assets.xcassets in Resources */,
+				BFAE9E091C3F99D00038AB88 /* PasswordTableViewCell.xib in Resources */,
+				BFCBDAC91C3CC347007DC5BB /* CategoryArray.plist in Resources */,
+				BFAE9E3B1C4490380038AB88 /* SelectUploadImageViewController.storyboard in Resources */,
+				BFAE9E761C4607FC0038AB88 /* PhotosCollectionViewCell.xib in Resources */,
+				BFAE9DF61C3F6B970038AB88 /* AddAlbumsView.xib in Resources */,
+				BFAE9E7C1C477CB80038AB88 /* PhotoBrowserViewController.storyboard in Resources */,
+				BFAE9E301C3FBDCB0038AB88 /* AlbumsCollectionView.xib in Resources */,
+				BFAE9E641C45EE970038AB88 /* PhotosCollectionView.xib in Resources */,
+				BF943B681C33B4CA00D8AB0D /* Main.storyboard in Resources */,
+				BFAE9E3D1C4490530038AB88 /* ProfileViewController.storyboard in Resources */,
+				BF5723F11C63345800D19F7F /* UploadHistoryViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B711C33B4CA00D8AB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B7C1C33B4CA00D8AB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEE3C43F156D7C0EDC449505 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0AF171568D24DDC5E6A75B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFABA00B1C7FEACB00D548B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3342b55d5e44e8db7999b0a8615650eb2e8c9dcf a57c2105eaa030dc5440a6a840ac87a92dba706e1483d5302ad91b7d41d009bf";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF943B561C33B4CA00D8AB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAE9E0C1C3F9A200038AB88 /* BaseTableView.m in Sources */,
+				BF943BEB1C3A0E4100D8AB0D /* UIImageView+SDWebImage.m in Sources */,
+				BFAE9DF01C3F62620038AB88 /* NSString+DeleteBlankText.m in Sources */,
+				BFAE9E5A1C45EC7B0038AB88 /* PhotosViewController.m in Sources */,
+				BFAE9E4A1C44D8E30038AB88 /* SelectUploadImageModel.m in Sources */,
+				BFCBDAD31C3D1D0A007DC5BB /* AlbumsModel.m in Sources */,
+				BF5723A61C60469500D19F7F /* PhotosModel.m in Sources */,
+				BFAE9E061C3F99D00038AB88 /* CompetenceTableView.m in Sources */,
+				BF943C0A1C3A1F5700D8AB0D /* CheckHasLogin.m in Sources */,
+				BF943BEA1C3A0E4100D8AB0D /* UIColor+PIXCategory.m in Sources */,
+				BFAE9E621C45EE8B0038AB88 /* PhotosCollectionView.m in Sources */,
+				BF943BEC1C3A0E4100D8AB0D /* UITextField+PIXTextFieldCategory.m in Sources */,
+				BF943C141C3BBFFA00D8AB0D /* AlbumsViewController.m in Sources */,
+				BFAE9E071C3F99D00038AB88 /* CustomHeaderView.m in Sources */,
+				BF943BD71C3A0C9200D8AB0D /* BaseViewController.m in Sources */,
+				BFAE9E341C4354E60038AB88 /* AlbumsCollectionModel.m in Sources */,
+				BFAE9E561C44F02B0038AB88 /* SelectAlbumsModel.m in Sources */,
+				BF943C041C3A160B00D8AB0D /* LoginViewController.m in Sources */,
+				BF5723F41C63395900D19F7F /* UploadHistoryTableViewCell.m in Sources */,
+				BFAE9E721C45F1520038AB88 /* PhotosCollectionModel.m in Sources */,
+				BFAE9E081C3F99D00038AB88 /* PasswordTableViewCell.m in Sources */,
+				BF943BF41C3A0E6200D8AB0D /* APIObject.m in Sources */,
+				BF943BFC1C3A102800D8AB0D /* BaseView.m in Sources */,
+				BFAE9E801C477D120038AB88 /* PhotoBrowserView.m in Sources */,
+				BFAE9E521C44EF740038AB88 /* SelectAlbumsTableView.m in Sources */,
+				BFAE9E671C45EF220038AB88 /* BaseCollectionView.m in Sources */,
+				BF943BF91C3A101700D8AB0D /* BaseModel.m in Sources */,
+				BF943B621C33B4CA00D8AB0D /* AppDelegate.m in Sources */,
+				BF943B5F1C33B4CA00D8AB0D /* main.m in Sources */,
+				BF943BED1C3A0E4100D8AB0D /* UITextView+PIXTextViewCategory.m in Sources */,
+				BFAE9E4E1C44EF260038AB88 /* SelectUploadImageView.m in Sources */,
+				BFAE9E401C4490620038AB88 /* ProfileViewController.m in Sources */,
+				BFAE9E051C3F99D00038AB88 /* CategoryTableView.m in Sources */,
+				BFAE9E6C1C45EF8B0038AB88 /* PhotosCollectionViewCell.m in Sources */,
+				BF943C001C3A10EE00D8AB0D /* MainViewController.m in Sources */,
+				BFAE9E261C3FAA170038AB88 /* AlbumsCollectionView.m in Sources */,
+				BF943BF51C3A0E6200D8AB0D /* EncodeUTF8.m in Sources */,
+				BFAE9DF51C3F6B970038AB88 /* AddAlbumsView.m in Sources */,
+				BFAE9E391C4490250038AB88 /* SelectUploadImageViewController.m in Sources */,
+				BF5723EF1C63329700D19F7F /* UploadHistoryViewController.m in Sources */,
+				BFAE9E7A1C477CAA0038AB88 /* PhotoBrowserViewController.m in Sources */,
+				BFAE9E461C44A8680038AB88 /* ZYQAssetPickerController.m in Sources */,
+				BF5723A91C60475100D19F7F /* FixAlbumsView.m in Sources */,
+				BF943BDA1C3A0CC400D8AB0D /* BaseTableViewController.m in Sources */,
+				BFAE9E271C3FAA170038AB88 /* AlbumsCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B6F1C33B4CA00D8AB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF943B781C33B4CA00D8AB0D /* PIXUploadPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF943B7A1C33B4CA00D8AB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF943B831C33B4CA00D8AB0D /* PIXUploadPhotoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF943B751C33B4CA00D8AB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF943B591C33B4CA00D8AB0D /* PIXUploadPhoto */;
+			targetProxy = BF943B741C33B4CA00D8AB0D /* PBXContainerItemProxy */;
+		};
+		BF943B801C33B4CA00D8AB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF943B591C33B4CA00D8AB0D /* PIXUploadPhoto */;
+			targetProxy = BF943B7F1C33B4CA00D8AB0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF943B661C33B4CA00D8AB0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF943B671C33B4CA00D8AB0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF943B6B1C33B4CA00D8AB0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF943B6C1C33B4CA00D8AB0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF943B851C33B4CA00D8AB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF943B861C33B4CA00D8AB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF943B881C33B4CA00D8AB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFE0EB20AA523832F405B9E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PIXUploadPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PIXNET.PIXAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "395e2cb7-8ef3-4968-bbf5-1c7b17202d86";
+			};
+			name = Debug;
+		};
+		BF943B891C33B4CA00D8AB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DCD4E6215AE301186FD7AF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PIXUploadPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PIXNET.PIXAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "395e2cb7-8ef3-4968-bbf5-1c7b17202d86";
+			};
+			name = Release;
+		};
+		BF943B8B1C33B4CA00D8AB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PIXUploadPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PIXNET.com.PIXUploadPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIXUploadPhoto.app/PIXUploadPhoto";
+			};
+			name = Debug;
+		};
+		BF943B8C1C33B4CA00D8AB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PIXUploadPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PIXNET.com.PIXUploadPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIXUploadPhoto.app/PIXUploadPhoto";
+			};
+			name = Release;
+		};
+		BF943B8E1C33B4CA00D8AB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PIXUploadPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PIXNET.com.PIXUploadPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PIXUploadPhoto;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BF943B8F1C33B4CA00D8AB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PIXUploadPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PIXNET.com.PIXUploadPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PIXUploadPhoto;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF943B551C33B4CA00D8AB0D /* Build configuration list for PBXProject "PIXUploadPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF943B851C33B4CA00D8AB0D /* Debug */,
+				BF943B861C33B4CA00D8AB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF943B871C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF943B881C33B4CA00D8AB0D /* Debug */,
+				BF943B891C33B4CA00D8AB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF943B8A1C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF943B8B1C33B4CA00D8AB0D /* Debug */,
+				BF943B8C1C33B4CA00D8AB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF943B8D1C33B4CA00D8AB0D /* Build configuration list for PBXNativeTarget "PIXUploadPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF943B8E1C33B4CA00D8AB0D /* Debug */,
+				BF943B8F1C33B4CA00D8AB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF943B521C33B4CA00D8AB0D /* Project object */;
+}

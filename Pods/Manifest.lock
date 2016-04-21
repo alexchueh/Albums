@@ -1,0 +1,174 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.4)
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ASProgressPopUpView (0.8)
+  - BLKFlexibleHeightBar (1.0.2)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - CustomIOSAlertView (0.9.3)
+  - DACircularProgress (2.3.1)
+  - Fabric (1.6.6)
+  - HexColors (2.2.1)
+  - IDMPhotoBrowser (1.8.1):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - M13ProgressSuite (1.2.7)
+  - MGSwipeTableCell (1.4.3)
+  - MJRefresh (2.3.2)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - OMGHTTPURLRQ (3.0.2):
+    - OMGHTTPURLRQ/RQ (= 3.0.2)
+  - OMGHTTPURLRQ/FormURLEncode (3.0.2)
+  - OMGHTTPURLRQ/RQ (3.0.2):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (3.0.2)
+  - OneSignal (1.10.6)
+  - PIX-cocoa-oauth (0.0.1)
+  - PIXNET-iOS-SDK (1.13.9):
+    - OMGHTTPURLRQ (~> 3.0.2)
+    - PIX-cocoa-oauth (~> 0.0.1)
+  - PIXToolbar (1.0.2)
+  - pop (1.0.8)
+  - RACollectionViewReorderableTripletLayout (0.1.0)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1.3)
+  - TOWebViewController (2.2.2):
+    - TOWebViewController/Core (= 2.2.2)
+  - TOWebViewController/Core (2.2.2)
+  - TPKeyboardAvoiding (1.2.11)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UIFloatLabelTextField (1.2.3)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.0.4)
+  - AFNetworking (~> 2.5.4)
+  - ASProgressPopUpView
+  - BLKFlexibleHeightBar
+  - Crashlytics
+  - CustomIOSAlertView (~> 0.9.3)
+  - Fabric
+  - IDMPhotoBrowser
+  - M13ProgressSuite
+  - MGSwipeTableCell (~> 1.4.0)
+  - MJRefresh (from `https://github.com/pixnet/MJRefresh.git`)
+  - MRProgress
+  - OneSignal
+  - PIXNET-iOS-SDK
+  - PIXToolbar (from `https://github.com/pixnet/pixnet-ios-Toolbar.git`)
+  - RACollectionViewReorderableTripletLayout
+  - ReactiveCocoa (~> 2.4.7)
+  - SDWebImage (~> 3.7.1)
+  - SVProgressHUD
+  - TOWebViewController
+  - TPKeyboardAvoiding
+  - TSMessages
+  - UIActivityIndicator-for-SDWebImage
+  - UIFloatLabelTextField
+
+EXTERNAL SOURCES:
+  MJRefresh:
+    :git: https://github.com/pixnet/MJRefresh.git
+  PIXToolbar:
+    :git: https://github.com/pixnet/pixnet-ios-Toolbar.git
+
+CHECKOUT OPTIONS:
+  MJRefresh:
+    :commit: 4c6bd67642b716d308823c90add3ac9529f63855
+    :git: https://github.com/pixnet/MJRefresh.git
+  PIXToolbar:
+    :commit: 7cb38376cb0b150176f63b5acd839abb0e60b442
+    :git: https://github.com/pixnet/pixnet-ios-Toolbar.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 860466cb4a66854e6acb590071ecee404b48f49d
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  CustomIOSAlertView: 94d2401e34fcfb0ac0134679d6947f5e251b0446
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Fabric: 1abc1e59f11fa39ede6f690ef7309d8563e3ec59
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  IDMPhotoBrowser: 99eccfe6431e182f64e2fe57ac654316fbf81576
+  M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
+  MGSwipeTableCell: cb9805df3cc5cad75ad43a5c1eb424be0316f0bf
+  MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  OMGHTTPURLRQ: 8376dc887d76a5a7e2a67881dc788f917a2f437c
+  OneSignal: fd84b309adc9826826dca53c0048e1a93d37940e
+  PIX-cocoa-oauth: 40aade2f3db07ddefac8373faecc3c18b98528c7
+  PIXNET-iOS-SDK: e9d132475db07a65aaaf3f7b3e1184df9e176055
+  PIXToolbar: d6638f136a14589ac233dc301537136d83aab7af
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  RACollectionViewReorderableTripletLayout: 929208004b2f8c2dde12326bf75b11e902959ddf
+  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  TOWebViewController: 7250caf720b8b96b4f02bcff0fef168ae290a0d9
+  TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  UIFloatLabelTextField: 24313cde1488784ed3b5d1c7d4dd329e60935028
+
+COCOAPODS: 0.38.2

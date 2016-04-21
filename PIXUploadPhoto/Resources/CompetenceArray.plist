@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全完開放</string>
+		<key>competenceID</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>好友相簿</string>
+		<key>competenceID</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>密碼相簿</string>
+		<key>competenceID</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>隱藏相簿</string>
+		<key>competenceID</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>好友群組相簿</string>
+		<key>competenceID</key>
+		<string>5</string>
+	</dict>
+</array>
+</plist>
